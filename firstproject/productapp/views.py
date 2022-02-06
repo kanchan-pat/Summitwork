@@ -11,7 +11,8 @@ def welcome(request):
     return render(request,'productapp/product_index.html')
 
 
-def displayproduct(request):
+def displayproduct(request): # create the queryset object and it as the context data 
     values={"name":"Abc","Address":"Texas","phone":"4465454"}
     return render(request,'productapp/displayproducts.html',values)
 
+ 
